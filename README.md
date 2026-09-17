@@ -355,16 +355,6 @@ Using the tools together provides a broader understanding of the target's public
 
 ---
 
-# ⚠️ Ethical Considerations
-
-Reconnaissance tools can be useful for legitimate security testing, but they should only be used against systems that you own or have explicit permission to assess.
-
-For this project, the target was provided as part of an intenship cybersecurity exercise.
-
-I did not attempt to exploit vulnerabilities or gain unauthorized access to the target.
-
----
-
 # 🚀 Skills Demonstrated
 
 * Linux command-line usage
@@ -381,8 +371,15 @@ I did not attempt to exploit vulnerabilities or gain unauthorized access to the 
 
 ---
 
-# 📚 References
+## 🔐 Security & Ethical Use
+Reconnaissance tools can be useful for legitimate security testing, but they should only be used against systems that you own or have explicit permission to assess.
 
+For this project, the target was provided as part of an intenship cybersecurity exercise.
+
+I did not attempt to exploit vulnerabilities or gain unauthorized access to the target.
+
+## 🔗 Tools & Resources
+Kali Linux: [https://kali.org/get-kali]
 * Kali Linux security tools
 * WHOIS
 * WhatWeb
@@ -391,12 +388,11 @@ I did not attempt to exploit vulnerabilities or gain unauthorized access to the 
 * WAFW00F
 * DNSRecon
 
----
+## 👤 Author
+Malehloa Seroke
+Cybersecurity Professional B082
 
-## 👨‍💻 Author
+LinkedIn: [www.linkedin.com/in/malehloa-seroke]
 
-**Malehloa Seroke**
-
-Cybersecurity | IT Infrastructure | Ethical Hacking
-
-This repository documents my practical cybersecurity learning journey and hands-on experience with reconnaissance and penetration-testing tools.
+## 📌 Project Information
+Program Name: Cybersecurity at Networkwalks | Week: 02 | Project: WK2-PM1-Footprinting-Reconnaissance-with-Kali-Linux | Repository: GitHub
