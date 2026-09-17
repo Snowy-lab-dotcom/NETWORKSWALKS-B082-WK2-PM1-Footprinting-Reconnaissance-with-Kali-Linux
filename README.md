@@ -4,10 +4,8 @@
 ![Kali Linux](https://img.shields.io/badge/OS-Kali%20Linux-blue)
 ![Project](https://img.shields.io/badge/Project-Footprinting%20%26%20Reconnaissance-green)
 ![Ethical Hacking](https://img.shields.io/badge/Focus-Ethical%20Hacking-orange)
-<br/>
-Cybersecurity reconnaissance lab using multiple Kali Linux tools for ethical hacking and footprinting
 
-## 📌 Project Overview
+# 📌 Project Overview
 
 This project was completed as part of **Week 2 – Project Module 1 (W2-PM1)** of my cybersecurity ethical hacking training with **Networkwalks**.
 
@@ -37,7 +35,10 @@ The main objectives of this project were to:
 5. Use `curl` to inspect HTTP response headers.
 6. Use `wafw00f` to identify a Web Application Firewall.
 7. Use `dnsrecon` to enumerate DNS records.
-8. Document reconnaissance findings.
+8. Reconnaissance Summary
+9. Key Lessons
+10. Security & Ethical Use
+11. Tools & Resources
 
 ---
 
@@ -69,17 +70,17 @@ The target was provided as part of the authorized educational lab.
 
 # 🔍 Task 1 – WHOIS
 
-## Objective
+### Objective
 
 Use `whois` to retrieve publicly available domain registration information.
 
-## Command
+### Command
 
 ```bash
 whois networkwalks.com
 ```
 
-## What I Looked For
+### What I Looked For
 
 The WHOIS information can contain details such as:
 
@@ -90,11 +91,11 @@ The WHOIS information can contain details such as:
 * Domain status
 * Registration information
 
-## Evidence
+### Evidence
 
 <img width="602" height="489" alt="image" src="https://github.com/user-attachments/assets/b0405fbe-624d-4a7a-99dc-6d94a3aa15cb" />
 
-## Output
+### Output
 
 The command output was saved in:
 
@@ -102,7 +103,7 @@ The command output was saved in:
 outputs/whois.txt
 ```
 
-## What I Learned
+### What I Learned
 
 I learned that WHOIS can provide useful information about a domain without needing to directly interact with the website itself.
 
@@ -112,17 +113,17 @@ This information can help a security professional understand the domain's regist
 
 # 🌐 Task 2 – WhatWeb
 
-## Objective
+### Objective
 
 Identify the technologies used by the target website.
 
-## Command
+### Command
 
 ```bash
 whatweb networkwalks.com
 ```
 
-## What I Looked For
+### What I Looked For
 
 WhatWeb can identify technologies such as:
 
@@ -134,11 +135,11 @@ WhatWeb can identify technologies such as:
 * IP address
 * Other technologies exposed by the website
 
-## Evidence
+### Evidence
 
 <img width="602" height="241" alt="image" src="https://github.com/user-attachments/assets/4b9bf869-3533-4e96-a37e-baef4b2272ff" />
 
-## Output
+### Output
 
 The command output was saved in:
 
@@ -146,7 +147,7 @@ The command output was saved in:
 outputs/whatweb.txt
 ```
 
-## What I Learned
+### What I Learned
 
 I learned how technology fingerprinting can reveal information about the software stack behind a website.
 
@@ -156,21 +157,21 @@ This information can later be compared against known vulnerabilities during an a
 
 # 🌍 Task 3 – NSLookup
 
-## Objective
+### Objective
 
 Resolve the target domain name to its IP address.
 
-## Command
+### Command
 
 ```bash
 nslookup networkwalks.com
 ```
 
-## Evidence
+### Evidence
 
 <img width="415" height="152" alt="image" src="https://github.com/user-attachments/assets/1581d030-a44e-4ffd-956c-31d7d6b98170" />
 
-## Output
+### Output
 
 The command output was saved in:
 
@@ -178,7 +179,7 @@ The command output was saved in:
 outputs/nslookup.txt
 ```
 
-## What I Learned
+### What I Learned
 
 I learned how DNS translates a human-readable domain name into an IP address.
 
@@ -188,17 +189,17 @@ Understanding DNS resolution is important during reconnaissance because it provi
 
 # 📡 Task 4 – CURL HTTP Headers
 
-## Objective
+### Objective
 
 Inspect the HTTP response headers returned by the target website.
 
-## Command
+### Command
 
 ```bash
 curl -I https://networkwalks.com
 ```
 
-## What I Looked For
+### What I Looked For
 
 HTTP response headers can reveal information such as:
 
@@ -210,11 +211,11 @@ HTTP response headers can reveal information such as:
 * Caching information
 * Other technologies or services
 
-## Evidence
+### Evidence
 
 <img width="602" height="146" alt="image" src="https://github.com/user-attachments/assets/0749927b-8775-460b-b634-ce541972af44" />
 
-## Output
+### Output
 
 The command output was saved in:
 
@@ -222,7 +223,7 @@ The command output was saved in:
 outputs/curl.txt
 ```
 
-## What I Learned
+### What I Learned
 
 I learned that HTTP headers can expose useful information about how a web server is configured.
 
@@ -232,21 +233,21 @@ From a defensive perspective, reviewing these headers can help identify unnecess
 
 # 🛡️ Task 5 – WAFW00F
 
-## Objective
+### Objective
 
 Determine whether the target website is protected by a Web Application Firewall.
 
-## Command
+### Command
 
 ```bash
 wafw00f networkwalks.com
 ```
 
-## Evidence
+### Evidence
 
 <img width="940" height="529" alt="image" src="https://github.com/user-attachments/assets/6c25e8ce-c78d-43a7-879a-c394fc5f73e0" />
 
-## Output
+### Output
 
 The command output was saved in:
 
@@ -254,7 +255,7 @@ The command output was saved in:
 outputs/wafw00f.txt
 ```
 
-## What I Learned
+### What I Learned
 
 I learned how `wafw00f` can be used to identify whether a website is using a Web Application Firewall.
 
@@ -264,17 +265,17 @@ A WAF can provide an additional security layer by inspecting and filtering malic
 
 # 🗂️ Task 6 – DNSRecon
 
-## Objective
+### Objective
 
 Enumerate DNS records associated with the target domain.
 
-## Command
+### Command
 
 ```bash
 dnsrecon -d networkwalks.com
 ```
 
-## What I Looked For
+### What I Looked For
 
 The DNS enumeration included information such as:
 
@@ -286,11 +287,11 @@ The DNS enumeration included information such as:
 * Other DNS records
 * Service records where available
 
-## Evidence
+### Evidence
 
 <img width="602" height="271" alt="image" src="https://github.com/user-attachments/assets/c52afc98-f1da-4695-a84a-c9f8fad47cfa" />
 
-## Output
+### Output
 
 The command output was saved in:
 
@@ -298,7 +299,7 @@ The command output was saved in:
 outputs/dnsrecon.txt
 ```
 
-## What I Learned
+### What I Learned
 
 I learned how DNS reconnaissance can reveal different components of an organization's infrastructure.
 
@@ -355,30 +356,14 @@ Using the tools together provides a broader understanding of the target's public
 
 ---
 
-# 🚀 Skills Demonstrated
-
-* Linux command-line usage
-* Kali Linux
-* Passive reconnaissance
-* DNS reconnaissance
-* Domain enumeration
-* Web technology fingerprinting
-* HTTP header analysis
-* WAF identification
-* DNS record enumeration
-* Cybersecurity documentation
-* Ethical hacking methodology
-
----
-
-## 🔐 Security & Ethical Use
+# 🔐 Security & Ethical Use
 Reconnaissance tools can be useful for legitimate security testing, but they should only be used against systems that you own or have explicit permission to assess.
 
 For this project, the target was provided as part of an intenship cybersecurity exercise.
 
 I did not attempt to exploit vulnerabilities or gain unauthorized access to the target.
 
-## 🔗 Tools & Resources
+# 🔗 Tools & Resources
 Kali Linux: [https://kali.org/get-kali]
 * Kali Linux security tools
 * WHOIS
@@ -388,11 +373,11 @@ Kali Linux: [https://kali.org/get-kali]
 * WAFW00F
 * DNSRecon
 
-## 👤 Author
+# 👤 Author
 Malehloa Seroke
 Cybersecurity Professional B082
 
 LinkedIn: [www.linkedin.com/in/malehloa-seroke]
 
-## 📌 Project Information
+# 📌 Project Information
 Program Name: Cybersecurity at Networkwalks | Week: 02 | Project: WK2-PM1-Footprinting-Reconnaissance-with-Kali-Linux | Repository: GitHub
